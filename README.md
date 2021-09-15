@@ -23,7 +23,7 @@ Accuracy Of Models
 ![bin_acc](https://user-images.githubusercontent.com/56801360/133324865-602e45cc-9c9c-4dac-b931-b3ac24f87edd.png) \
 ![bin_acc1](https://user-images.githubusercontent.com/56801360/133324869-47df27e2-534b-4121-abe1-d309cde8704e.png)\
 
-Logistic Regression	,K Neighbors and AdaBoost	have the higgest accuracy.\
+Logistic Regression	,K Neighbors and AdaBoost	have the highest accuracy.\
 Logistic Regression was used For the prediction RUL (Binary 1: Okay & 0:Not Okay ).
 
 Calculated The Mean Squared Error On 10 Diffrent Regression Model

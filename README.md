@@ -3,7 +3,7 @@ Aerospace Predictive Maintenance using Machine Learning Technology
 
 Working Of The Project On A Test Case
 
-![screenshot (2)](https://user-images.githubusercontent.com/56801360/133327607-777cea5b-ca5a-440a-8d9a-ff16c026d436.png)
+![screenshot](https://user-images.githubusercontent.com/56801360/133636708-49554128-35e5-4d6d-8b67-0a26c2c136dc.png)
 
 
 Used 9 Categorical Model

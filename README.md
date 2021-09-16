@@ -3,6 +3,11 @@ Aerospace Predictive Maintenance using Machine Learning Technology
 
 Working Of The Project On A Test Case
 
+
+
+https://user-images.githubusercontent.com/56801360/133639578-405e575a-e45f-4877-9bd5-b88415e1568b.mp4
+
+
 ![screenshot](https://user-images.githubusercontent.com/56801360/133636708-49554128-35e5-4d6d-8b67-0a26c2c136dc.png)
 
 
@@ -43,4 +48,4 @@ Calculated The Mean Squared Error On 10 Diffrent Regression Model
 ![reg_acc_1](https://user-images.githubusercontent.com/56801360/133324875-eb8025a1-76b6-4eb7-9583-774e9b705ab0.png)\
 
 SVM has the lowset MSE.\
-SVR was used For the rediction RUL.\
+SVR was used For the rediction RUL.

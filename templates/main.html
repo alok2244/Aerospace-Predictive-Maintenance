@@ -1,0 +1,87 @@
+<html lang="en" style="height:100%">
+   <head>
+      <link rel="stylesheet" href="{{url_for('static',filename="styles/main.css")}}">
+      <title>Gradio</title>
+   </head>
+   <body style="background-color:#4984b8">
+    {% if output==True%}
+                     <div class="panel output">
+                        <div class="component_set relative">
+                          <h2/ style="font-family: Arial"> Engine Condition
+                          <h3/ style="font-family: Arial">{{condition}}
+                          <h2/ style="font-family: Arial"> Remaining Useful Life
+                          <h3/ style="font-family: Arial">{{RemainingUL}}
+                        </div>
+                     </div>
+                     {% endif %}
+                     <div class="panel input">
+                       <form name="form1" action="/mainResult" method="post" onsubmit="return required()"> 
+                         <div class="component_set">
+                           <div class="component">
+                              <div class="panel_header">Cycle</div>
+                              <div class="input_number" ><input type="number" name='Cycle' value=""></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure2</div>
+                              <div class="input_number"><input type="number" name='SensorMeasure2' value=""></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure3</div>
+                              <div class="input_number"><input type="number" name='SensorMeasure3' value=""></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure4</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure4'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure7</div>
+                              <div class="input_number"><input  type="number" name='SensorMeasure7' value=""></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure8</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure8'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure9</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure9'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure11</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure11'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure12</div>
+                              <div class="input_number"><input type="number" name='SensorMeasure12' value=""></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure13</div>
+                              <div class="input_number"><input type="number" name='SensorMeasure13' value=""></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure14</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure14'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure15</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure15'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure17</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure17'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure20</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure20'></div>
+                           </div>
+                           <div class="component">
+                              <div class="panel_header">SensorMeasure21</div>
+                              <div class="input_number"><input type="number" value="" name='SensorMeasure21'></div>
+                           </div>
+                            <div class="panel_buttons">
+                              <input type="submit" value="SUBMIT" class="panel_button"></input> 
+                     </div>
+                       </form>
+                     </div>
+                      
+   </body>
+</html>

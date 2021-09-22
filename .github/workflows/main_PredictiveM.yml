@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'PredictiveM'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_63176efb5ac54691b01aa48743356c17 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_d4f7f401a7dc4508ae5bc9a62badd2b4 }}

@@ -1,8 +1,34 @@
 from flask import Flask,render_template,request
 import numpy as np
 import joblib
+import pickle
+import os
 print('here3')
 app=Flask(__name__)
+print('here4')
+
+
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))     
+# set file directory path
+
+scaler_path = os.path.join(APP_ROOT, "./pickel/scaler.pkl")  
+# set path to the scaler
+
+clf_path = os.path.join(APP_ROOT, "./pickel/clf_bin.pkl") 
+# set path to the clf
+
+reg_path = os.path.join(APP_ROOT, "./pickel/clf_reg.pkl") 
+# set path to the reg
+    
+with open(scaler_path, 'rb') as handle:
+    scaler = pickle.load(handle)
+
+with open(clf_path, 'rb') as handle:
+    _bin = pickle.load(handle)
+    
+with open(reg_path, 'rb') as handle:
+    reg = pickle.load(handle)
+   
 
 @app.route("/")
 def home():
@@ -31,23 +57,23 @@ def prediction():
      input_list_value=[]
      if request.method == 'POST':
          for i,name in enumerate(input_list_name):
-            input_list_value.append(request.form[name])
+            input_list_value.append(float(request.form[name]))
      
      print(input_list_value)
      print(type(input_list_value))
      
-     scaler = joblib.load('scaler.sav')
+     
     
      a = np.array(input_list_value)
      a=np.reshape(a,(1, a.size))
      a= scaler.transform(a)
     
-     reg = joblib.load('clf_reg.sav')
+     
      
      RUL=reg.predict(a)
      print(RUL)
     
-     _bin = joblib.load('clf_bin.sav')
+     
     
      RUL_Binary=_bin.predict(a)
      mapping=lambda x: "Engine Is Okay" if x==1 else "Engine Is Not Okay"

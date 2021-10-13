@@ -1,7 +1,7 @@
 # Aerospace-Predictive-Maintenance
 Aerospace Predictive Maintenance using Machine Learning Technology
 
-[App service Link](https://25974.gradio.app/)
+[App service Link](https://25974.gradio.app/)  (May Not Work After 72hrs - 14/10/21)
 
 Working Of The Project On A Test Case
 
